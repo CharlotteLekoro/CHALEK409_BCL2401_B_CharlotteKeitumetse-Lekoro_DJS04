@@ -1,43 +1,19 @@
-# DJS04 Project Brief: Book Connect - Web Components
+Rationale Behind Refactoring Decisions
 
-Building upon your "Book Connect" project in DJS03, you will now dive into Web Components. This challenge will refine your skills in creating reusable, encapsulated, and interactive elements.
+Data Store Object: I made the data storeobject to store the book, author, genre data, variables into a single object to make it easier at manage in one place
 
-🚨**NOTE** Here you are to continue where you left off in DJS03. This means you must build on your abstractions and work on transforming the Book Preview functionality into a web component🚨
+Query Selectors Object: Collected all DOM element references into the selectors object. I did this to try and eliminate the chance of repetition of the code and functions.
 
-![alt text](image.png)
+By putting certain task into functions like renderOptions, renderBooks, updateShowMoreBook the code becomes more organised and it makes debugging easier
 
-### Objective
-Transform the book preview functionality of the "Book Connect" application into a fully operational Web Component. Additionally, evaluate and potentially convert other parts of the application into Web Components to enhance modularity and reusability.
+Event handlers, Organized all the event listeners in one place in the handleEvents function and to keep the code tidy and laso to make sure i do not have cases of repetiion of functions.
 
-### Goals
-- **Convert Book Preview to Web Component**: The main focus is to encapsulate the book preview feature into a Web Component, making it reusable and independent.
-- **Assess Other Components**: Identify other elements within the "Book Connect" app that could benefit from being converted into Web Components.
-- **Maintain Functionality**: Ensure that the application retains all its current functionalities after refactoring.
+I was also carefull to ensure that the code has clear and consistent names.
 
-### Tasks
-1. **Understand the Existing Codebase**: Familiarise yourself with the current structure and functionality of the "Book Connect" project, focusing on the book preview feature.
-2. **Create a Web Component for Book Preview**:
-   - Encapsulate the book preview into a Web Component.
-   - Ensure that the component is self-contained, with its own HTML, CSS, and JavaScript.
-   - Test the component to ensure it works seamlessly within the app.
-3. **Identify and Convert Other Components**:
-   - Analyse the application to identify other potential components for conversion.
-   - Prioritise components based on their reusability and importance to the app.
-   - Convert the chosen elements into Web Components.
-4. **Testing and Integration**:
-   - Rigorously test the new components individually and within the context of the application.
-   - Pay special attention to interactions between components and the overall user experience.
-5. **Documentation**:
-   - Document the process of creating the Web Components.
-   - Include any challenges faced and how they were overcome.
-   - Provide a clear guide on how the components should be used within the app.
+Challenges
+I had a big challenge when i had to go throught the code to try and understand what each part was doing the way it was organised in the begginning, then i had to find places where the code repeated itself and some functions were similar in their activities.
 
-### Discussion and Reflection
-Prepare to discuss your experience with your coach, focusing on:
-- Challenges encountered while converting the book preview and other elements into Web Components.
-- The rationale behind selecting certain elements for conversion into Web Components.
-- Insights gained about the advantages and limitations of using Web Components in web development.
+During the process of refactoring the code i had to keep track of the functionality of the code, I had to make sure that the new way that the code was organised still had the same functionality.
 
-### Submission Guidelines
-Submit your updated "Book Connect" codebase, including all the newly created Web Components. Ensure your code is well-commented and adheres to best practices for Web Component development. Include a detailed report covering your process, challenges, and reflections on working with Web Components.
-
+Reflections
+In this challenge i was able to learn the importance of DOM manipulation
