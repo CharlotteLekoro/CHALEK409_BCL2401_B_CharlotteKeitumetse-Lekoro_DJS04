@@ -1,4 +1,6 @@
 import { books, authors, genres, BOOKS_PER_PAGE } from "./data.js";
+import "./search-form.js";
+import "./book-list.js";
 
 class BookList extends HTMLElement {
   constructor() {
